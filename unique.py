@@ -1,0 +1,5 @@
+x=input()
+x1=x.lower()
+x2=set(x1)
+x3=tuple(x2)
+print(",".join(x3))
