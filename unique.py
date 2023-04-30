@@ -1,5 +1,20 @@
-x=input()
-x1=x.lower()
-x2=set(x1)
-x3=tuple(x2)
-print(",".join(x3))
+#Description: Write a program in Python to print the number of unique letters in a string. Only new letters from the string should be counted and not duplicates.
+  
+  string=input("Enter string")
+  string1=string.lower()
+  unique=set(string1)
+  l=[]
+  for i in string:
+    for i in unique:
+      l.append(i)
+      unique.remove(i)
+  print("unique",(",".join(unique)))
+  
+  #output:
+  #Test case 1:
+  #Enter string:Bhavana
+  #h,a,v,n
+  #Test case 2:
+  #Enter string:India
+  #n,d,i,a
+  
