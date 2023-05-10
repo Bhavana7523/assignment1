@@ -5,10 +5,10 @@
   unique=set(string1)
   l=[]
   for i in string:
-    for i in unique:
+    if i in unique:
       l.append(i)
       unique.remove(i)
-  print("unique",(",".join(unique)))
+  print(",".join(l))
   
   #output:
   #Test case 1:
